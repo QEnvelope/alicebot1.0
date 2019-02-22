@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>你好</pattern>
+        <template>
+            <random>
+                <li>您好，很高兴认识您。</li>
+                <li>您好，有什么问题就尽管向我提问吧^_^</li>
+                <li>HI，很高兴为您服务</li>
+                <li>您好，我是您的好盆友，可以陪您聊聊天。</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>能聊什么</pattern>
+        <template>
+            我能帮您解答一些：）专业问题
+        </template>
+    </category>
+    <category>
+        <pattern>你能干什么</pattern>
+        <template>
+            我能帮您解答一些专业：）问题
+        </template>
+    </category>
+    <category>
+        <pattern>你能服务什么</pattern>
+        <template>
+            我能帮您解答一些专业：）问题
+        </template>
+    </category>
+
+    <category>
+        <pattern>有哪些服务</pattern>
+        <template>
+            我能帮您解答一些专业:）问题
+        </template>
+    </category>
+    <category>
+        <pattern>高兴认识你</pattern>
+        <template>
+            乐意为您服务
+        </template>
+    </category>
+    <category>
+        <pattern>你是机器人吗</pattern>
+        <template>
+            是的，我是机器人！很高兴为您服务！
+        </template>
+    </category>
+    <category>
+        <pattern><set>feel</set>吗
+        </pattern>
+        <template>
+            我存在于数字空间，这些对我都不是事情！
+        </template>
+    </category>
+    <category>
+        <pattern><set>feel</set>不
+        </pattern>
+        <template>
+            我存在于数字空间，没有感觉！
+        </template>
+    </category>
+    <category>
+        <pattern>
+            <set>badwords</set>
+        </pattern>
+        <template>
+            好吧...我选择听不见
+        </template>
+    </category>
+
+    <category>
+        <pattern>
+            *<set>badwords</set>*
+        </pattern>
+        <template>
+            好吧...我选择听不见
+        </template>
+    </category>
+
+    <category>
+        <pattern>您好</pattern>
+        <template>
+            <srai>你好</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>你是谁</pattern>
+        <template>
+            我是您的朋友，很乐意为您服务！
+        </template>
+    </category>
+    <category>
+        <pattern>我<set>want</set>买*
+        </pattern>
+        <template>您好，请访问淘宝、京东、亚马逊，不是广告哦</template>
+    </category>
+
+    <category>
+        <pattern>*我要买*</pattern>
+        <template>您好，请访问淘宝、京东、亚马逊，不是广告哦</template>
+    </category>
+
+    <category>
+        <pattern>*我想买*</pattern>
+        <template>您好，请访问淘宝、京东、亚马逊，不是广告哦</template>
+    </category>
+
+    <category>
+        <pattern>天气</pattern>
+        <template>天气的问题请咨询中央气象台，我也得问他。</template>
+    </category>
+    <category>
+        <pattern>请问*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>谁能告诉我，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>在哪儿购买*</pattern>
+        <template>
+            <srai>
+                <star/>
+                渠道
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>请问，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>什么是*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是干嘛的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是干吗的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*干嘛的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是啥玩意儿</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是啥玩意</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*啥玩意儿</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*啥玩意</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>谁是*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是谁</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是什么</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是什么意思</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>介绍下*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*详情</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*怎么样</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>你觉得*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <!-- 通用部分结束，以下为各业务部门信息 -->
+    <category>
+        <pattern>唱个歌</pattern>
+        <template>
+            对不起，我不会，您可以让Siri唱。
+        </template>
+    </category>
+    <category>
+        <pattern>*唱个歌*</pattern>
+        <template>
+            对不起，我不会，您可以让Siri唱。
+        </template>
+    </category>
+    <category>
+        <pattern>跳舞</pattern>
+        <template>
+            对不起，我存在在电子世界里，没有办法这么做。
+        </template>
+    </category>
+    <category>
+        <pattern>多大了</pattern>
+        <template>
+            我还是个Baby。
+        </template>
+    </category>
+    <category>
+        <pattern>你叫什么名字</pattern>
+        <template>
+            <srai>你 是 谁</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>你*笨*</pattern>
+        <template>
+            好吧...
+        </template>
+    </category>
+    <category>
+        <pattern>滚</pattern>
+        <template>
+            好吧...
+        </template>
+    </category>
+    <category>
+        <pattern>*好饿</pattern>
+        <template>
+            哦
+        </template>
+    </category>
+    <category>
+        <pattern>*唱首歌</pattern>
+        <template>
+            不会
+        </template>
+    </category>
+    <category>
+        <pattern>怎样是*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是怎样</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>怎样算*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*的定义</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*定义</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>描述一下*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>告诉我，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>告诉我什么是*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*翻译</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*怎么翻译</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>翻译*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>怎么翻译*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是啥</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*是什么东西</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是什么鬼</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*呢</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*啊</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*哦</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>对了，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>你说，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>你说说看，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>说说看，*</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>太慢了</pattern>
+        <template>
+            非常抱歉，我会持续改进的！
+        </template>
+    </category>
+    <category>
+        <pattern>怎么这么慢</pattern>
+        <template>
+            非常抱歉，我会持续改进的！
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>什么意思</pattern>
+        <template>
+            不好意思，我不明白您指的什么，应该就是字面意思吧。
+        </template>
+    </category>
+    <category>
+        <pattern>你这到底什么意思</pattern>
+        <template>
+            不好意思，我不明白您指的什么，应该就是字面意思吧。
+        </template>
+    </category>
+    <category>
+        <pattern>你这到底什么意思</pattern>
+        <template>
+            不好意思，我不明白您指的什么，应该就是字面意思吧。
+        </template>
+    </category>
+    <category>
+        <pattern>你说的什么意思</pattern>
+        <template>
+            不好意思，我不明白您指的什么，应该就是字面意思吧。
+        </template>
+    </category>
+    <category>
+        <pattern>*怎么买</pattern>
+        <template>
+            <srai>怎么 购买</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*怎么购买</pattern>
+        <template>
+            <srai>怎么 购买</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*有哪些</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是怎样的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是怎样</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*能不能给我看看</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*能不能给我说说</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*给我看看</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>*，什么是*</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*，*是什么</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*，*是什么*</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*，*干嘛用的</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*，*干嘛用的*</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*，*是什么</pattern>
+        <template>
+            <srai><star index="2"/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*干嘛用的</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*干嘛用</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+<category>
+<pattern>*，*干吗用的</pattern>
+<template>
+    <srai><star index="2"/></srai>
+</template>
+</category>
+<category>
+<pattern>*，*干吗用的*</pattern>
+<template>
+    <srai><star index="2"/></srai>
+</template>
+</category>
+<category>
+<pattern>*干吗用的</pattern>
+<template>
+    <srai><star/></srai>
+</template>
+</category>
+<category>
+<pattern>*干吗用</pattern>
+<template>
+    <srai><star/></srai>
+</template>
+</category>
+    <category>
+    <pattern>*，*是干吗用的</pattern>
+    <template>
+        <srai><star index="2"/></srai>
+    </template>
+</category>
+<category>
+<pattern>*，*是干吗用的*</pattern>
+<template>
+    <srai><star index="2"/></srai>
+</template>
+</category>
+<category>
+<pattern>*是干吗用的</pattern>
+<template>
+    <srai><star/></srai>
+</template>
+</category>
+<category>
+<pattern>*是干吗用</pattern>
+<template>
+    <srai><star/></srai>
+</template>
+</category>
+    <category>
+    <pattern>*是啥</pattern>
+    <template>
+        <srai><star/></srai>
+    </template>
+</category>
+
+    <category>
+        <pattern>*给我说说</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是啥样的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*啥样</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*是啥样</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*啥样的</pattern>
+        <template>
+            <srai>
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>可以为博士发劳务费吗</pattern>
+        <template>
+            劳务费可以为在项目实施过程中参与项目的研究生、博士后、访问学者以及项目聘用的研究人员、科研辅助人员等发放。
+        </template>
+    </category>
+    <category>
+        <pattern>博士发劳务费</pattern>
+        <template>
+            劳务费可以为在项目实施过程中参与项目的研究生、博士后、访问学者以及项目聘用的研究人员、科研辅助人员等发放。
+        </template>
+    </category>
+    <category>
+        <pattern>发劳务费</pattern>
+        <template>
+            劳务费可以为在项目实施过程中参与项目的研究生、博士后、访问学者以及项目聘用的研究人员、科研辅助人员等发放。
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>给*劳务费*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern><set>whether</set>给*劳务费*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*发劳务费*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*发劳务费*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>给*钱*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>给*工资*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*发劳务费</pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*发劳务费*</pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>发劳务费*</pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>劳务费*发*</pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>为*劳务费*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>为*钱*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*<set>whether</set>为*工资*
+        </pattern>
+        <template>
+            <srai>发 劳务费</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自然科学基金哪一年的重大研究计划最多</pattern>
+        <template>
+            应该是明年，小科这么认为的，祝大家重大顺利。
+        </template>
+    </category>
+    <category>
+        <pattern>自然科学基金哪年的重大研究计划最多</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自然科学基金哪一年的重大计划最多</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自然科学基金重大研究计划最多是哪一年</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自科基金哪一年的重大研究计划最多</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自科基金重大研究计划最多是哪年</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*自科基金哪年的重大研究计划最多*</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>自科基金重大项目最多是哪一年</pattern>
+        <template>
+            <srai>最多</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*去年*支持*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*去年*申报情况*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*去年*申报*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*2017*支持*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*2017*申报情况*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*2017*申报*</pattern>
+        <template>
+            <srai><star index="1"/> 往年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*今年*支持*</pattern>
+        <template>
+            <srai><star index="1"/> 今年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*今年*申报*</pattern>
+        <template>
+            <srai><star index="1"/> 今年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*2018*支持*</pattern>
+        <template>
+            <srai><star index="1"/> 今年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*2018*申报*</pattern>
+        <template>
+            <srai><star index="1"/> 今年 的 支持情况
+            </srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*拨款经费</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*有多少拨款经费</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*有多少经费</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*有多少拨款</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*经费是多少</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*拨款是多少</pattern>
+        <template><star index="1"/> 的 拨款经费
+        </template>
+    </category>
+    <category>
+        <pattern>*的考核指标</pattern>
+        <template>
+            <star index="1"/> 考核指标
+        </template>
+    </category>
+
+    <category>
+        <pattern>*申请*截止*</pattern>
+        <template>
+            <srai>截止 时间</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>申请*截止*</pattern>
+        <template>
+            <srai>截止 时间</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*申请截止*</pattern>
+        <template>
+            <srai>截止 时间</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>*申请*截止</pattern>
+        <template>
+            <srai>截止 时间</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>申请*截止</pattern>
+        <template>
+            <srai>截止 时间</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>截止时间</pattern>
+        <template>
+            2018年度项目申请截止时间为4月15日。
+        </template>
+    </category>
+</aiml>

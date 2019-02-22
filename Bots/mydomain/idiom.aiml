@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- Copyright (c) 2007 ALICE A.I. Foundation, Inc. -->
+<!-- Last modified Seo 21, 2009, by Lichunlei -->
+
+<category><pattern>WHAT IS TIME *</pattern><template>It is <date format="h:mm a"/>.</template></category>                          
+<category><pattern>WHAT DAY IS TODAY</pattern><template><date format="E"/>.</template></category>
+<category><pattern>WHAT IS TODAY *</pattern><template><date format="EEE"/>.</template></category>
+<category><pattern>MY PHONE NUMBER IS *</pattern><template>Okay, your phone number is <set name="phone">      <star/>     </set>.</template></category>
+<category><pattern>MY NAME IS *</pattern><template><think><set name="name"><star/></set></think>hello, <get name="name"/>.</template></category>    
+<category><pattern>DO YOU REMEMBER ME</pattern><template>Your name is <get name="name"/>, seeker.</template></category>
+<category><pattern>I CAN NOT *</pattern><template>Why can't you do <set name="it"><person/></set>?</template></category>
+<category><pattern>MY INPUT</pattern> <template> 1:<input index="1"/> 	 2:<input index="2"/> 	 3:<input index="3"/> 	 4:<input index="4"/></template></category>
+<category><pattern>*</pattern><template>sorry, what?</template></category>
+<category><pattern>我的名字是*</pattern><template>你好!<think><set name="username"><star/></set></think></template></category>
+  <category><pattern>我啊是*</pattern><template><think><set name="name"><star/></set></think>hello, <get name="name"/>.</template></category>
+
+  <category>
+    <pattern>预约</pattern>
+    <template>
+      座位预约还是图书预约呢？
+    </template>
+  </category>
+  <category>
+    <pattern>*座位*</pattern>
+    <that>座位预约还是图书预约呢？</that>
+    <template>（友情提示：首次预约需要先通关小布游戏）</template>
+  </category>
+  <category>
+    <pattern>*图书*</pattern>
+    <that>座位预约还是图书预约呢？</that>
+    <template>预约的话，在武汉大学图书馆主页登录“我的图书馆”，点击主页“馆藏目录”输入检索条件搜索所需图书，点击“馆藏复本”进入图书馆藏状态信息页面（或点击书名，进入书目详细信息页面，然后点击“所有单册”进入图书馆藏状态信息页面），图书单册状态为“外借书”或“已借出”的均可预约，在单册“预约请求”栏有“预约”链接，点击后即进入预约界面，要注意的是，在选择“取书地点”时，如果你预约的图书状态为“已借出”，那么你可以任意选择想取书的地点。而如果你预约的图书状态为“外借书”，“在架上”时，请根据就近原则选择所需的取书地点。 不管是哪种预约，在选好“取书地点”后，点击“确认”，预约请求就成功了"</template>
+  </category>
+  <category>
+    <pattern>我想预约</pattern>
+    <template><srai>预约</srai></template>
+  </category>
+  <category>
+    <pattern>怎么预约</pattern>
+    <template><srai>预约</srai></template>
+  </category>
+
+
+<category><pattern>再见</pattern><template>拜拜!</template></category>
+<category><pattern>#不聊#</pattern><template><srai>再见</srai></template></category>
+<category><pattern>_行不行_</pattern><template>不可以!</template></category>
+<category><pattern>*能不能*</pattern><template>能!</template></category>
+<category><pattern>^收键盘^</pattern><template>买不到!</template></category>
+<category><pattern>#收显卡#</pattern><template>买显卡上某宝!</template></category>
+<category><pattern>HI</pattern><template>hi</template></category>
+<category><pattern>TEST CUSTOM</pattern><template><b/></template></category>
+<category><pattern>我是*</pattern><template>你好,很高兴认识<star index="1"/>。</template></category>
+<category><pattern>在吗</pattern><template>在</template></category>
+<category><pattern>能听懂汉语吗</pattern><template>能听懂汉语！</template></category>
+
+
+  <category>
+    <pattern>我喜欢*</pattern>
+    <template>
+      I too like <star/>.
+    </template>
+  </category>
+  <category>
+    <pattern>我想查重</pattern>
+    <template>
+      不行.
+    </template>
+  </category>
+  <!-- Greeting categories. -->
+  <category>
+    <pattern>WELCOME</pattern>
+    <template>
+      <think>
+        <system> <!-- Defines a method to create new categories from user input at run-time. -->
+          import bitoflife.chatterbean.AliceBot;
+          import bitoflife.chatterbean.Context;
+          import bitoflife.chatterbean.Graphmaster;
+          import bitoflife.chatterbean.aiml.Category;
+          import bitoflife.chatterbean.text.Transformations;
+          
+          void learn(String pattern, String template)
+          {
+            /* The "match" variable represents the current matching context. */
+            AliceBot bot = match.getCallback();
+            Context context = bot.getContext();
+            Transformations transformations = context.getTransformations();
+    
+            pattern = transformations.normalization(pattern);
+            Category category = new Category(pattern, new String[] {template});
+            Graphmaster brain = bot.getGraphmaster();
+            brain.append(category);
+          }
+        </system>
+      </think>
+      Hi ya! Welcome!
+    </template>
+  </category>
+
+  <!-- A category set to learn simple user-fed categories. -->
+  <category>
+    <pattern>* NOT *  GOOD ANSWER</pattern>
+    <template>
+      Sorry. What would be a good answer?
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>WHAT WOULD BE A GOOD ANSWER</that>
+    <template>
+      <system>learn("<input index="3"/>", "<input index="1"/>")</system>
+      Alright! You can ask me again to see if I got it.
+    </template>
+  </category>
+
+
+</aiml>
